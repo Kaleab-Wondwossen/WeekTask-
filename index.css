@@ -1,0 +1,96 @@
+.body {
+    text-align: center;
+    display: flex;
+  }
+  .navBar {
+    flex: 0 0 auto;
+    background-color: black;
+    background-image: url("bgNavBlog.jpg");
+    text-align: right;
+    height: 200px;
+    border: 2px solid black;
+  }
+  .btnNav {
+    border-radius: 30%;
+    margin: 15px;
+    font-family: cursive;
+    background-color: black;
+    color: red;
+  }
+  .btnNav:hover {
+    color: blue;
+  }
+  .header{
+    font-family: cursive;
+  }
+  .left-content, .right-content {
+    flex: 1;
+    padding: 20px; /* Add some padding for aesthetics */
+  }
+  .right-content img {
+    border: 2px solid black;
+    border-radius: 10px; /* Optional: to make the border rounded */
+  }
+  .loremImg{
+    width: 500px;
+    height: 600px;
+  }
+  .logo {
+    width: 50px;
+    height: 50px;
+    position: absolute; /* Set the position of the logo to absolute */
+    top: 0; /* Position the logo at the top */
+    left: 0; /* Position the logo at the left */
+  }
+  .footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    font-family: cursive;
+  }
+  .butLetter{
+    color: white;
+  }
+  @media only screen and (max-width: 768px) {
+  .body {
+    flex-direction: column;
+  }
+  
+  .navBar {
+    height: auto;
+  }
+  
+  .btnNav {
+    margin: 5px;
+    font-size: 14px;
+  }
+  
+  .header {
+    font-size: 24px;
+  }
+  
+  .left-content,  .right-content {
+    padding: 10px;
+  }
+  
+  .loremImg {
+    width: 100%;
+    height: auto;
+  }
+  }
+  
+  /* Media queries for even smaller screens */
+  @media only screen and (max-width: 480px) {
+  .btnNav {
+    font-size: 12px;
+  }
+  
+  .header {
+    font-size: 20px;
+  }
+  
+  .left-content,
+  .right-content {
+    padding: 5px;
+  }
+  }
